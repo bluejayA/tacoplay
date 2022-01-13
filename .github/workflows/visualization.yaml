@@ -19,7 +19,7 @@ jobs:
         with:
           output_file: "repo_diagram.svg"
           excluded_paths: "ignore,.github"
-          artifact_name: "repo-diagram"
+ #         artifact_name: "repo-diagram"
  #     - name: Get artifact
  #       uses: actions/download-artifact@v2
  #       with:
