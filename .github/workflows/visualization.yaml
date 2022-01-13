@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@main
+        uses: actions/checkout@v2
+      - run: git remote -v/
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
@@ -17,8 +18,8 @@ jobs:
           excluded_paths: "ignore,.github"
           artifact_name: "repo-diagram"
           should_push: false
-      - name: Get artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: "repo-diagram"
-          path: "downloads"
+ #     - name: Get artifact
+ #       uses: actions/download-artifact@v2
+ #       with:
+ #         name: "repo-diagram"
+ #         path: "downloads"
