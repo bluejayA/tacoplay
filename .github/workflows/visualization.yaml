@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
-          with:
           output_file: "repo_diagram.svg"
           excluded_paths: "ignore,.github"
