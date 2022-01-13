@@ -3,6 +3,9 @@
 
 tacoplay is a set of ansible playbooks to selectively deploy and configure various services (platforms) developed under TACO project. 
 
+## Repository Visual Diagram
+![repo_diagram](repo_diagram.svg)
+
 List of services (platforms) is as following: 
 
 * Docker registry
